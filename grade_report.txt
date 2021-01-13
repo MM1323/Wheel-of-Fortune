@@ -1,0 +1,60 @@
+CORRECTNESS
+-------------------------------------------------------------------------
+LOADING WORDS
+ All words are read from file                               [PASS]   1/1
+ Words with apostrophes are ignored                         [PASS]   1/1
+ Words are stored in upper case                             [PASS]   1/1
+LIST OF WORDS
+ New item is properly allocated                             [PASS]   1/1
+ String is properly stored                                  [PASS]   1/1
+ First item is properly added                               [PASS]   1/1
+ List integrity is preserved when adding a second item      [PASS]   1/1
+ All strings are freed                                      [PASS]   1/1
+ All items are freed                                        [PASS]   1/1
+CHOOSING A WORD
+ Random word is chosen                                      [PASS]   1/1
+ Any word can be chosen                                     [PASS]   1/1
+BEGINNING OF TURN
+ Player number and balance is displayed                     [PASS]   1/1
+ Re-prompts on invalid character                            [PASS]   1/1
+ Re-prompts on multiple characters                          [FAIL]   0/1
+GUESSING A CONSONANT
+ Only unguessed consonants are displayed                    [PASS]   1/1
+ Turn ends on invalid or multiple characters                [PASS]   1/1
+ Lowercase characters are accepted                          [PASS]   1/1
+ Turn ends if an already guessed consonant is entered       [PASS]   1/1
+ Player is awarded appropriate amount for a correct guess   [PASS]   1/1
+ Turn continues if consonant is present                     [PASS]   1/1
+ Turn ends if consonant is not present                      [PASS]   1/1
+BUYING VOWELS
+ Turn ends if insufficient funds                            [PASS]   1/1
+ Only unguessed vowels are displayed                        [PASS]   1/1
+ Turn ends on invalid or multiple characters                [PASS]   1/1
+ Lowercase characters are accepted                          [PASS]   1/1
+ Player's balance is always reduced $250 for vowel purchase [PASS]   1/1
+ Turn continues if vowel is present                         [PASS]   1/1
+ Turn ends if vowel is not present                          [PASS]   1/1
+SOLVING THE PUZZLE
+ Correct solution is accepted                               [PASS]   1/1
+ Mix of lower and uppercase characters are accepted         [PASS]   1/1
+ Only correct solutions are accepted                        [PASS]   1/1
+END OF TURN
+ Current state of puzzle is properly displayed              [PASS]   1/1
+-------------------------------------------------------------------------
+                                           CORRECTNESS TOTAL        31/32
+
+STYLE
+-------------------------------------------------------------------------
+ Uses defined constants                                     [PASS]   2/2
+ play_round calls other functions                           [PASS]   2/2
+ Uses built-in character functions                          [PASS]   2/2
+ Word file is closed                                        [PASS]   1/1
+ No memory leaks                                            [PART]   1/2
+ No memory errors                                           [PASS]   3/3
+ Code compiles without warnings                             [PASS]   2/2
+ Contains comments                                          [PASS]   2/2
+ Multiple commits to git repo                               [PASS]   2/2
+-------------------------------------------------------------------------
+                                                 STYLE TOTAL        17/18
+
+                                                       TOTAL        48/50
